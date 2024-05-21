@@ -1,0 +1,231 @@
+.section__container {
+    display: flex;
+    flex-direction: column;
+}
+.section__container h1 {
+    text-align: center;
+}
+.listin__categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+}
+.each__listing__on {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    border-radius: 60px;
+    padding: 12px 15px;
+}
+.each__listing {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 40px;
+    background-color: var(--color-light-grey);
+    padding: 13px 22px;
+}
+.section__top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.each__listing h3 {
+    font-size: 14px;
+    color: rgb(43, 43, 43);
+    font-weight: 300;
+    padding: 4px;
+}
+.img__test__property {
+    position: relative;
+}
+.taggg {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    padding: 6px 15px;
+    background-color: var( --color-success);
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.each__listing__on h3 {
+    font-size: 14px;
+    color: rgb(247, 247, 247);
+    font-weight: 300;
+    padding: 4px;
+}
+
+
+.listing__property {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.each__property {
+    border-radius: 7px;
+    border: 1px solid var(--color-light-grey);   
+}
+.each__image{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+}
+.div-image {
+    position: relative;
+}
+.each__property h4{
+    color: var(--color-primary);
+    font-weight: 400;
+    margin: 15px 0;
+    padding: 5px 18px;
+}
+.each__property h2{
+    padding: 0px 18px;
+}
+.each__property h4 span{
+    color: var(--color-black);
+    font-size: 12px;
+}
+.list__next__icon {
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+    font-weight: 300;
+}
+.property__name {
+    font-size: 22px;
+    font-weight: 600;
+}
+.other__property__tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 0px 15px;
+}
+.other__property__tag h5 {
+    font-weight: 300;
+    font-size: 13px;
+    color:rgb(83, 83, 83);
+}
+.other__property__tag .bath {
+    border-right: 2px solid rgb(83, 83, 83);
+    border-left: 2px solid rgb(83, 83, 83);
+    padding-inline: 40px;
+
+}
+.property__tag {
+    border-top: 1px solid var(--color-light-grey);
+    padding: 22px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img__user {
+    width: 50px;
+    height: 50px;
+}
+.property__user {
+    width: 100%;
+    border-radius: 60%;
+    object-fit: cover;
+}
+.yeah_pr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.user__property__tag h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.user__property__tag h6 {
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: rgb(83, 83, 83);
+    font-weight: 300;
+}
+.like__icon{
+    font-size: 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 6px 10px 3px 10px;
+}
+.load__more {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    border-radius: 60px;
+    padding: 10px 22px;
+    color: white;
+    align-self: center;
+    font-weight: 300;
+}
+.load__more:hover {
+    border: 1px solid var(--color-black);
+    background-color: var(--color-black);
+    border-radius: 60px;
+    padding: 10px 22px;
+    color: white;
+    align-self: center;
+    font-weight: 300;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+    h2 {
+        font-size: 1.8rem;
+        letter-spacing: -1px;
+    }
+    h3 {
+        font-size: 1.4rem;
+        letter-spacing: -1px;
+    }
+    h4 {
+        font-size: 1rem;
+        letter-spacing: -1px;
+    }
+    .listin__categories {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        gap: 12px;
+        
+
+    }
+    .each__listing__on, .each__listing {
+        padding: 13px 15px;
+        flex-shrink: 0;
+    }
+    .listing__property {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .other__property__tag {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 0;
+        padding: 0px 15px;
+    }
+    .other__property__tag h5 {
+        font-weight: 300;
+        font-size: 13px;
+        color:rgb(83, 83, 83);
+    }
+    .other__property__tag .bath {
+        border-right: 2px solid rgb(83, 83, 83);
+        border-left: 2px solid rgb(83, 83, 83);
+        padding-inline: 10px;
+    
+    }
+    
+}
